@@ -19,7 +19,7 @@ public class MainMenu {
                 volume.pilihanVolume();
                 break;
             case 0:
-                System.out.println("Keluar Kalkulator...");
+                System.out.println("\nKeluar Kalkulator...");
                 return;
             default:
                 System.out.println("Pilih angka yang ada dimenu");
@@ -42,6 +42,16 @@ public class MainMenu {
         System.out.print("Masukkan Pilihan: ");
         var pilih = scan.nextInt();
         return pilih;
+    }
+
+    public void headerPilih(String pilihan) {
+        System.out.println("\n========================================");
+        System.out.println("Memilih " + pilihan);
+        System.out.println("========================================");
+    }
+
+    public void processing() {
+        System.out.println("\nProcessing... ");
     }
 
     public void pressAnyKeyToContinue() {
