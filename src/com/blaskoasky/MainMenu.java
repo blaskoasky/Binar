@@ -23,7 +23,7 @@ public class MainMenu {
                 return;
             default:
                 System.out.println("Pilih angka yang ada dimenu");
-                mainMenu();
+                switchMenu();
                 break;
         }
         scan.close();
